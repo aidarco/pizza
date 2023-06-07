@@ -34,7 +34,7 @@ class Cart extends ChangeNotifier{
     userCart.remove(pizza);
     notifyListeners();
   }
-
+//ЦЕНА
   double getPrice()
   {
     for(int i = 0; i < userCart.length; i++)
