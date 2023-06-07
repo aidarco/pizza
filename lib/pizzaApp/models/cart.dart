@@ -1,6 +1,5 @@
 
 
-import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:pizza/pizzaApp/models/pizzaModel.dart';
@@ -22,12 +21,13 @@ class Cart extends ChangeNotifier{
   {
     return userCart;
   }
-
+//добавление
   void addingCart(Pizza pizza)
   {
     userCart.add(pizza);
     notifyListeners();
   }
+//Удаление
 
   void deleteCart(Pizza pizza)
   {
