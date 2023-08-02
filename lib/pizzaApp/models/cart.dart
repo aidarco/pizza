@@ -14,7 +14,7 @@ class Cart extends ChangeNotifier{
     Pizza(name: "Острая пеперони", description: "Пеперони с с перцем халапенью", imagePath: "lib/images/острая пеперони.png", price: 25),
 
   ];
-  double  Price = 0;
+  int  Price = 0;
   List<Pizza> userCart = [];
 
   List<Pizza> getUserCart()
@@ -35,13 +35,11 @@ class Cart extends ChangeNotifier{
     notifyListeners();
   }
 //ЦЕНА
-  double getPrice()
+  void getPrice(Pizza pizza)
   {
-    for(int i = 0; i < userCart.length; i++)
-      {
-        Price += userCart[i].price;
-      }
-    return Price;
+
+Price += pizza.price;
+notifyListeners();
 
   }
 

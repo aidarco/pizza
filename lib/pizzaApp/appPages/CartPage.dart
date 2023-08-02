@@ -39,7 +39,7 @@ class _CartPageState extends State<CartPage> {
                 ),
                 child: Center(
                     child: Text(
-                  "Сумма: ${vm.getPrice().toString()}",
+                  "Сумма: ${vm.Price.toString()}",
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                 ))),
           ),

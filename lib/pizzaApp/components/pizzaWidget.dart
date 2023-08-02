@@ -77,6 +77,7 @@ class PizzaWidget extends StatelessWidget {
                   GestureDetector(
                     onTap: () {
                     vm.addingCart(pizza);
+                    vm.getPrice(pizza);
                     },
                     child: Container(
                       width: 70,
