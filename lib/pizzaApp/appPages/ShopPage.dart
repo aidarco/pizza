@@ -65,12 +65,12 @@ class TextMostPopularPizzas extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 12),
+    return const Padding(
+      padding: EdgeInsets.symmetric(horizontal: 12),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         crossAxisAlignment: CrossAxisAlignment.end,
-        children: const [
+        children: [
           Text("Most Popular Pizzas 🔥", style:  TextStyle(fontSize: 20, color: Colors.deepOrangeAccent, fontWeight: FontWeight.bold),),
           Text("See all", style:  TextStyle(fontSize: 16, color: Colors.blue, fontWeight: FontWeight.bold),),
 
